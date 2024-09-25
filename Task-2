@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+int main() {
+    int weekdayInput, vacationInput;
+    bool wd, vc;
+
+    printf("Is it a weekday? (1: true, 0: false): ");
+    scanf("%d", &weekdayInput);
+    
+    printf("Are you on vacation? (1: true, 0: false): ");
+    scanf("%d", &vacationInput);
+
+    wd = (weekdayInput == 1);
+    vc = (vacationInput == 1);
+
+    if (!wd || vc) {
+        printf("Sleep: true\n");
+    } else {
+        printf("Sleep: false\n");
+    }
+
+    return 0;
+}
