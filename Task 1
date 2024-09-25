@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int c = 0;
+    int f = 0;
+    int pc = 0;
+    int cf = 0;
+
+    printf("Enter number of calories in food: ");
+    scanf("%d", &c);
+    printf("Enter fat grams in food: ");
+    scanf("%d", &f);
+
+    	if(c>0 && f>0 && c>=f){
+		cf = f*9;
+		pc = cf/c;
+		printf("Calories from fat: %d\n", cf);
+		printf("Percentage of calories: %d", pc);
+	}
+	else{
+		printf("Either the calories or fat grams were incorrectly entered");
+	}
+
+    return 0;
+}
