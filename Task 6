@@ -1,0 +1,4 @@
+According to the given code:
+For 1st condition (5>8) is false, therefore; it goes to the 2nd condition which is (1!=(2<5)).
+For 2nd condition (2<5) is true, this makes 1!= TRUE, becomes False (1!=1).
+Thus it goes into the 3rd condition which is x=30, that's why the output is 30.
